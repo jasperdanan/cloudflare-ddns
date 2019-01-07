@@ -278,4 +278,4 @@ class CloudFlare:
         :param data_dict:
         :return:
         """
-        return str(data_dict).replace('"', 'double_quote').replace("'", '"').replace('double_quote', "'")
+        return str(data_dict).replace('"', 'double_quote').replace("'", '"').replace('double_quote', "'").replace("True", "true").replace("False", "false")
